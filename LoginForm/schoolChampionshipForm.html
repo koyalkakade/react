@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>School Championship Registration Form</title>
+    <style>
+        .container {
+            margin: 40px 300px;
+            padding: 10px;
+            width: 600px;
+            background: linear-gradient(rgb(245, 203, 245), rgb(174, 242, 245));
+        }
+
+        .clsdiv1 {
+            display: flex;
+        }
+
+        input {
+            padding: 3px;
+            margin: 5px 0;
+        }
+
+        img {
+            height: 100px;
+            margin-left: 100px;
+        }
+
+        .btnBlue {
+            background-color: rgb(42, 42, 197);
+            width: 150px;
+            margin-left: 200px;
+            padding: 8px;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2>School Championship Registration Form</h2>
+            <label for="name">School Name <sup style="color: red;">*</sup></label><br>
+            <input type="text" id="name" style="width: 89%;" required /><br>
+            <label for="schooler">Schooler Name <sup style="color: red;">*</sup></label><br>
+            <div class="clsdiv1">
+                <input type="text" id="firstnm" style="width: 40%;" placeholder="First" required />
+                <input type="text" id="lastnm" style="width: 40%;margin-left: 46px;" placeholder="Last" required />
+            </div>
+            <label for="parentnm">Parent Name <sup style="color: red;">*</sup></label><br>
+            <div class="clsdiv1">
+                <input type="text" id="pfirstnm" style="width: 40%;" placeholder="First" required />
+                <input type="text" id="plastnm" style="width: 40%;margin-left: 46px;" placeholder="Last" required />
+            </div>
+            <label for="parentphone">Parent Phone <sup style="color: red;">*</sup></label><br>
+            <input type='text' pattern="^[6-9]{1}[0-9]{9}" id="parentphone" style="width: 89%;" placeholder="##########"
+                required /><br>
+            <label for="email">Parent Email <sup style="color: red;">*</sup></label><br>
+            <input type="email" id="email" style="width: 89%;" required /><br>
+            <label for="sport">Preferred Sport <sup style="color: red;">*</sup></label><br>
+            <input type="text" id="sport" style="width: 89%;" required /><br>
+            <label for="verification" style="margin-left: 50px;">Verification <sup
+                    style="color: red;">*</sup></label><br>
+            <img src="./assets/notrobot.png"><br>
+            <button class="btnBlue"><i class="fa-sharp fa-solid fa-play"></i> Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

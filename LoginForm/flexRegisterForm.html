@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Registration</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        .parentdiv {
+            margin: 20px 100px;
+            padding: 55px 90px;
+        }
+
+        .container {
+            background-color: white;
+            padding-left: 35px;
+            border-radius: 5px;
+            display: flex;
+        }
+
+        p {
+            color: rgb(128, 127, 127);
+        }
+
+        input {
+            padding: 6px;
+            width: 220px;
+            margin: 5px 0;
+        }
+
+        button {
+            padding: 5px;
+        }
+
+        .para {
+            text-align: center;
+        }
+
+        .clsSec1 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .clsDiv2 {
+            margin-left: 55px;
+        }
+
+        .clsDiv3 {
+            margin-left: 45px;
+        }
+
+        .clsSec2 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .clsSecDiv2 {
+            margin-left: 55px;
+        }
+
+        .clsSecDiv3 {
+            margin-left: 45px;
+        }
+
+        .btnBlue {
+            background-color: rgb(42, 42, 197);
+            width: 180px;
+            margin: 5px;
+            padding: 8px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentdiv">
+        <div class="container">
+            <form>
+                <h2>Registration</h2>
+                <p>Personal Details</p>
+                <section class="clsSec1">
+                    <div class="clsDiv1">
+                        <label for="fullname"><b>Full Name</b></label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter Your Name"><br>
+                        <label for="mobile"><b>Mobile Number</b></label><br>
+                        <input type='text' pattern="^[6-9]{1}[0-9]{9}" id="mobile" name="mobile" placeholder="Emter Mobile Number"><br>
+
+                    </div>
+                    <div class="clsDiv2">
+                        <label for="birth"><b>Date of Birth</b></label><br>
+                        <input type="date" id="birth" name="birth" placeholder="Emter Date of Birth"><br>
+                        <label for="gender"><b>Gender</b></label><br>
+                        <input type="text" id="gender" name="gender" placeholder="Emter Your Gender"><br>
+                    </div>
+                    <div class="clsDiv3">
+                        <label for="email"><b>Email</b></label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email"><br>
+                        <label for="occ"><b>Occupation</b></label><br>
+                        <input type="text" id="occ" name="occ" placeholder="Emter Your Occupation"><br>
+                    </div>
+                </section>
+                <p>Identity Details</p>
+                <section class="clsSec2">
+                    <div class="clsSecDiv1">
+                        <label for="idtype"><b>ID Type</b></label><br>
+                        <input type="text" id="idtype" name="idtype" placeholder="Enter Your ID Type"><br>
+                        <label for="issuedt"><b>Issue Date</b></label><br>
+                        <input type="date" id="issuedt" name="issuedt" placeholder="Emter ID Issue Date"><br>
+                    </div>
+                    <div class="clsSecDiv2">
+                        <label for="IdNum"><b>ID Number</b></label><br>
+                        <input type="text" id="IdNum" name="IdNum" placeholder="Enter ID Number"><br>
+                        <label for="issueState"><b>Issue State</b></label><br>
+                        <input type="text" id="issueState" name="issueState" placeholder="Emter ID Issue State"><br>
+                    </div>
+                    <div class="clsSecDiv3">
+                        <label for="authority"><b>Issue Authority</b></label><br>
+                        <input type="text" id="authority" name="authority" placeholder="Enter Issue Department"><br>
+                        <label for="exdt"><b>Expiry Date</b></label><br>
+                        <input type="date" id="exdt" name="exdt" placeholder="Emter ID Expiry Date"><br>
+                    </div>
+                </section>
+                <button class="btnBlue">Next <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

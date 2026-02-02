@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .input-container {
+            display: flex;
+            width: 70%;
+            margin-left: 35px;
+            margin-bottom: 15px;
+        }
+
+        .container {
+            width: 50%;
+            margin: 35px;
+            padding: 35px;
+            border-radius: 25px;
+            background-color: lightgray;
+        }
+
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+
+        .clsradio {
+            margin-left: 30px;
+            outline: none;
+        }
+
+        .field:focus {
+            border: 2px solid dodgerblue;
+        }
+
+        .btn {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            opacity: 0.9;            
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" style="max-width:500px;margin:auto">
+            <div class="input-container" style="display:flex;justify-content:center;">
+                <h2 style="color: gray;">Registration</h2>
+            </div>
+            <div class="input-container">
+                <input class="clsradio" type="radio" placeholder="Personal" name="regType" checked> Personal
+                <input class="clsradio" type="radio" placeholder="Company" name="regType"> Company
+            </div>
+            <br>
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="field" type="email" placeholder="Email" name="email">
+            </div>
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="field" type="text" placeholder="User" name="usrnm">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="field" type="password" placeholder="Password" name="psw">
+            </div>
+            <br>
+            <div class="input-container">
+                <input class="clsradio" type="radio" name="gender" checked> Male
+                <input class="clsradio" type="radio" name="gender"> Female
+            </div>
+            <br>
+            <div class="input-container" style="display:flex;justify-content:right;">                
+                <label style="color: gray;"> By clicking Register you agree on our<a href="#"> terms and conditions</a> </label>
+                <button type="submit" class="btn">REGISTER</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
