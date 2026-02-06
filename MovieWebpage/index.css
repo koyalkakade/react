@@ -1,0 +1,181 @@
+/* body {
+    background-color: black;
+} */
+body {
+  background-color: #121212;
+}
+/* nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+} */
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.clsnavbar {
+    display: flex;
+    padding: 10px;
+}
+
+.clsspotify {
+    color: white;
+    font-size: x-large;
+}
+
+.clshouse {
+    margin-left: 300px;
+    color: white;
+}
+
+.clssearch {
+    width: 380px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.clsseacrhdiv {
+    position: relative;
+}
+.clsseacrhdiv .icon {
+    position: absolute; 
+    margin-top: 13px;
+    margin-left: 10px;
+}
+.clsseacrhdiv .icon1 {
+    position: absolute; 
+    margin-top: 13px;
+    margin-left: 350px;
+}
+
+.clsseacrhdiv span {
+    color: white;
+    margin-left: 8px;
+}
+
+.clsWhiteBTN {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 8px;
+    font-size: medium;
+
+}
+
+.clsAsideDiv {
+    background-color: #565353;
+    width: 200px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clsAsideDiv1 {
+    background-color: #565353;
+    width: 200px;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    border-radius:10px
+}
+
+.clsAsideDiv1 button{
+text-align: right;
+}
+
+.maindiv {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    background-color: #1e1e1e;    
+    padding-left: 15px;
+    padding-top: 10px;
+    min-height:410px;
+}
+
+aside span {
+    color: white;
+}
+
+main {
+    width: 80%;
+    height: 410px;
+ overflow-y: auto; /* Adds a vertical scroll bar when content exceeds 200px */ 
+  overflow-x:hidden; /* remove horizontal scroll bar when content exceeds 200px */
+}
+
+.songs-content {
+    display: flex;
+  transition: transform 0.3s ease;
+  width: 90%;
+  overflow-x:hidden; /* Adds a horizontal scroll bar when content exceeds 200px */
+}
+
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 170px;
+  height: 230px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  text-align: center;
+  color: #fff;
+  margin: 0 10px;
+   display: flex;
+   flex-wrap: wrap;       /* allows divs to wrap to next line */
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 5px;
+}
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: #b3b3b3;
+  margin: 0 0 15px;
+}
+
+/* Overlay with icon */
+.overlay {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;               /* hidden by default */
+  transition: opacity 0.3s ease;
+  /* width: 170px;
+  height: 236px; */
+}
+
+.overlay i {
+  font-size: 40px;
+  color: #1DB954; 
+}
+
+/* Show on hover */
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.clsgradient{
+    height: 37px;
+   background-image: linear-gradient(to right, rgb(244, 31, 183), rgb(168, 108, 241));
+}
