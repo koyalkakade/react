@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position With Image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .div1 {
+            background-image: linear-gradient(to right, rgb(253, 205, 110), rgb(241, 144, 212));
+            position: relative;
+            width: 600px;
+            height: 400px;
+            margin-top: 50px;
+        }
+
+        .div2 {
+            position: absolute;
+            margin-top: 70px;
+        }
+
+        .img1 {
+            width: 400px;
+            height: 250px;
+            box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .img2 {
+            /* filter: contrast(1); */
+            mix-blend-mode: normal;
+            position: absolute;
+            /* background-color: transparent; */
+            left: 130px;
+            height: 390px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+
+    </div>
+    <div class="div2">
+        <img src="./assets/outcrowd.jpg" class="img1">
+        <img src="./assets/girlImg2.png" class="img2">
+    </div>
+</body>
+
+</html>
