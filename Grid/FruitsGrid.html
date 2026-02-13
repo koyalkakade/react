@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .griContainerFruit {
+            display: grid;
+            width: 500px;
+            gap: 15px;
+        }
+
+        .grapes {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 100px;
+            width: 115px;
+        }
+
+        .clsgrapes {
+            height: 100px;
+            width: 115px;
+        }
+
+        .strawberry {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 100px;
+            width: 115px;
+        }
+
+        .clsstrawberry {
+            height: 100px;
+            width: 115px;
+        }
+
+        .watermelon {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 270px;
+            width: 255px;
+        }
+
+        .clswatermelon {
+            height: 270px;
+            width: 255px;
+        }
+
+        .orange {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 150px;
+            width: 255px;
+        }
+
+        .clsorange {
+            height: 150px;
+            width: 255px;
+        }
+
+        .papaya {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 150px;
+            width: 255px;
+        }
+
+        .clspapaya {
+            height: 150px;
+            width: 255px;
+        }
+
+        .pineapple {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 150px;
+            width: 255px;
+        }
+
+        .clspineapple {
+            height: 150px;
+            width: 255px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid</h1>
+
+    <div class="griContainerFruit">
+        <div class="grapes"><img src="./assests/grapes.jpg" class="clsgrapes"></div>
+        <div class="strawberry"><img src="./assests/strawberry.jpg" class="clsstrawberry"></div>
+        <div class="watermelon"><img src="./assests/watermeleon.jpg" class="clswatermelon"></div>
+        <div class="orange"><img src="./assests/orange.jpg" class="clsorange"></div>
+        <div class="papaya"><img src="./assests/papaya.jpg" class="clspapaya"></div>
+        <div class="pineapple"><img src="./assests/pineapple.jpg" class="clspineapple">
+        </div>
+    </div>
+</body>
+
+</html>
