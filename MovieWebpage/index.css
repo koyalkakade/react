@@ -244,5 +244,6 @@ main {
 /* footer css*/
 .clsgradient {
   height: 37px;
+  text-align: center;
   background-image: linear-gradient(to right, rgb(244, 31, 183), rgb(168, 108, 241));
 }
