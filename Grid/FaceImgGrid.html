@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Grid</title>
+    <style>
+        .faceGrid {
+            background-color: rgb(215, 210, 210);
+            display: grid;
+            width: 620px;
+            height: 630px;
+            gap: 10px;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+            padding: 20px;
+        }
+
+        .photo1 {
+            width: 180px;
+        }
+
+        .photo4,
+        .photo5,
+        .photo6 {
+            width: 200px;
+            position: inherit;
+            height: 200px;
+        }
+
+        .photo2 {
+            width: 235px;
+            height: 245px;
+            margin-left: -20px;
+            position: relative;
+        }
+
+        .photo3 {
+            width: 180px;
+            margin-left: 14px;
+        }
+
+        .photo7,
+        .photo8,
+        .photo9 {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="faceGrid">
+        <img src="./assests/photo1.jpg" class="photo1">
+        <img src="./assests/photo2.jpg" class="photo2">
+        <img src="./assests/photo3.jpg" class="photo3">
+        <img src="./assests/photo4.jpg" class="photo4">
+        <img src="./assests/photo5.jpg" class="photo5">
+        <img src="./assests/photo6.jpg" class="photo6">
+        <img src="./assests/photo7.jpg" class="photo7">
+        <img src="./assests/photo8.jpg" class="photo8">
+        <img src="./assests/photo9.jpg" class="photo9">
+    </div>
+</body>
+
+</html>

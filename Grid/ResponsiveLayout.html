@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 50px;
+            /* overflow-x: hidden; */
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Responsive Layout</h2>
+    <div class="container">
+        <img src="./assests/grapes.jpg">
+        <img src="./assests/orange.jpg">
+        <img src="./assests/papaya.jpg">
+        <img src="./assests/watermeleon.jpg">
+        <img src="./assests/papaya.jpg">
+        <img src="./assests/watermeleon.jpg">
+        <img src="./assests/papaya.jpg">
+    </div>
+</body>
+
+</html>

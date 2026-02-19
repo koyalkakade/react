@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .griContainer {
+            display: grid;
+            width: 500px;
+            gap: 15px;
+        }
+
+        .winter {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 150px;
+            width: 170px;
+        }
+
+        .clswinter {
+            height: 150px;
+            width: 170px;
+            position: relative;
+        }
+
+        .building {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            height: 150px;
+            width: 352px;
+        }
+
+        .clsbuilding {
+            height: 150px;
+            width: 352px;
+            position: relative;
+        }
+
+        .sea {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 150px;
+            width: 352px;
+        }
+
+        .clssea {
+            height: 150px;
+            width: 352px;
+            position: relative;
+        }
+
+        .window {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            height: 150px;
+            width: 170px;
+        }
+
+        .clswindow {
+            height: 150px;
+            width: 170px;
+            position: relative;
+        }
+
+        p {
+            position: absolute;
+            color: white;
+            font-size: small;
+            margin-top: -144px;
+        }
+
+        .ImgBuilding {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .clsImgBuilding {
+            height: 50px;
+            width: 170px;
+            position: relative;
+        }
+
+        .ImgSea {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .clsImgSea {
+            height: 50px;
+            width: 170px;
+            position: relative;
+        }
+
+        .ImgWindow {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .clsImgWindow {
+            height: 50px;
+            width: 170px;
+            position: relative;
+        }
+         .p1 {
+            position: absolute;
+            color: white;
+            font-size: small;
+            margin-top: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Grid Gallery</h1>
+    <div class="griContainer">
+        <div class="winter">
+            <img src="./assests/winter.jpg" class="clswinter">
+            <p>The winter is my discontent.</p>
+        </div>
+
+        <div class="building">
+            <img src="./assests/building.jpg" class="clsbuilding">
+            <p>Instagram is toxic but i keep posting.</p>
+        </div>
+        <div class="sea">
+            <img src="./assests/sea1.jpg" class="clssea">
+            <p>Throwing my phone in to the ocean.</p>
+        </div>
+        <div class="window">
+            <img src="./assests/window.jpg" class="clswindow">
+            <p>I'm never living my room.</p>
+        </div>
+        <div class="ImgBuilding">
+            <img src="./assests/building.jpg" class="clsImgBuilding">
+            <p class="p1">Staring at the horizon thinking.</p>
+        </div>
+        <div class="ImgSea">
+            <img src="./assests/sea1.jpg" class="clsImgSea">
+            <p class="p1">This is water.</p>
+        </div>
+        <div class="ImgWindow">
+            <img src="./assests/window.jpg" class="clsImgWindow">
+            <p class="p1">Table for one please.</p>
+        </div>
+    </div>
+</body>
+
+</html>

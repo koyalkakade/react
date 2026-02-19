@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page Layout</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .gridContainerLayout {
+            display: grid;
+            /* grid-template-areas: 'headerOne headerOne headerOne'
+                'Navbar Navbar Navbar'
+                'leftSide mai mai'
+                'foo foo foo'; */
+            /* grid-template-columns: repeat(3, [col-start] 1fr);
+            grid-template-rows: repeat(5,600px); */
+        }
+
+        header {
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 4; */
+            height: 50px;
+            background-color: rgb(237, 239, 212);
+            grid-template-columns: repeat(1, [col-start] 1fr);
+            grid-template-rows: auto;
+        }
+
+        nav {
+            /* grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 4; */
+            height: 50px;
+            background-color: rgb(218, 218, 255);
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+        }
+
+        .maindiv {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+        }
+
+        .asideLeft {
+            /* grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 2; */
+            height: 400px;
+            width: 425px;
+            border: 1px solid gray;
+
+        }
+
+        main {
+            /* grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 4; */
+            height: 400px;
+            width: 852px;
+            background-color: antiquewhite;
+        }
+
+        footer {
+            /* grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end: 4; */
+            height: 50px;
+            background-color: gray;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridContainerLayout">
+        <header>
+            <h3>Blog Page Layout</h3>
+        </header>
+        <nav></nav>
+        <div class="maindiv">
+            <aside class="asideLeft"></aside>
+            <main></main>
+        </div>
+        <footer></footer>
+
+    </div>
+</body>
+
+</html>

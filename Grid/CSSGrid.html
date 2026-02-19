@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Grid</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+        }
+
+        .gridContainerLayout {
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 'navbar navbar navbar navbar'
+                'leftSide mai mai mai'
+                'leftSide con con1 con2'
+                'leftSide foo foo foo';
+        }
+
+        nav {
+            grid-area: navbar;
+            height: 50px;
+            background-color: aquamarine;
+        }
+
+        content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        content .div1 {
+            grid-area: con;
+            height: 200px;
+            width: 310px;
+            background-color: rgb(176, 241, 244);
+        }
+
+        content .div2 {
+            grid-area: con1;
+            height: 200px;
+            width: 315px;
+            background-color: rgb(30, 214, 184);
+        }
+
+        content .div3 {
+            grid-area: con2;
+            height: 200px;
+            width: 335px;
+            background-color: rgb(176, 241, 244);
+        }
+
+        .asideLeft {
+            grid-area: leftSide;
+            height: 615px;
+            background-color: rgb(65, 154, 227);
+            width: 250px;
+        }
+
+        main {
+            grid-area: mai;
+            height: 345px;
+            background-color: rgb(67, 245, 245);
+        }
+
+        footer {
+            grid-area: foo;
+            height: 50px;
+            background-color: rgb(22, 164, 95);
+        }
+
+        @media screen and (max-width:600px) {
+
+            .gridContainerLayout {
+                grid-template-areas:
+                    'navbar'
+                    'leftSide'
+                    'mai'
+                    'con'
+                    'con1'
+                    'con2'
+                    'foo'
+                ;
+            }
+
+            nav,
+            .asideLeft,
+            main,
+            footer {
+                display: flex;
+                justify-content: center;
+                height: 100px;
+                width: 100%;
+            }
+
+            content {
+                display: block;
+            }
+
+            content .div1,
+            content .div2,
+            content .div3 {
+                height: 100px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridContainerLayout">
+        <nav> navbar</nav>
+        <aside class="asideLeft">sidebar</aside>
+        <main>main</main>
+        <content>
+            <div class="div1">
+                <p>content 1</p>
+            </div>
+            <div class="div2">
+                <p>content 2</p>
+            </div>
+            <div class="div3">
+                <p>content 3</p>
+            </div>
+        </content>
+        <footer>footer</footer>
+
+    </div>
+</body>
+
+</html>
