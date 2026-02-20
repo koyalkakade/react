@@ -28,10 +28,14 @@
             margin-left: 169px;
             margin-top: -287px;
             clip-path: polygon(40% -3%, 111% -32%, 26% 100%, 0% 50%);
+            font-size: x-small;
+            text-align: center;
+            color: white;
         }
 
         .nature3 {
-            clip-path: polygon(58% 17%, 126% 78%, 15% 78%, 1% 64%);
+            /* clip-path: polygon(58% 17%, 126% 78%, 15% 78%, 1% 64%); */
+            clip-path: polygon(57% 18%, 156% 77%, 14% 78%, 0% 64%);
             margin-left: 276px;
             margin-top: -402px;
             width: 446px;
@@ -40,18 +44,28 @@
 
         .nature4 {
             clip-path: polygon(95% 88%, 98% 2%, -223% -214%);
-            margin-left: 800px;
-            margin-top: -279px;
+            margin-left: -189px;
+            height: 141px;
+        }
+
+        .clsgrid {
+            display: flex;
         }
     </style>
 </head>
 
 <body>
-    <div class="ImgDiv">
-        <img src="./assests/nature1.jpg" class="nature1">
-        <div class="div3"></div>
-        <div><img src="./assests/nature2.jpg" class="nature2"></div>
-        <img src="./assests/nature3.jpg" class="nature3">
+    <div class="clsgrid">
+        <div class="ImgDiv">
+            <img src="./assests/nature1.jpg" class="nature1">
+            <div class="div3">
+                <h4 style="margin-top: -2px;"><br>This Grid Works <br> In Internet Explorer</h4><br>
+                <p style="margin-left: -53px;">Lorem ipsum dolor sit amet consectetur<br> adipisicing elit.
+                    Temporibus placeat<br> quasi culpa nulla soluta illum.</p>
+            </div>
+            <div><img src="./assests/nature2.jpg" class="nature2"></div>
+            <img src="./assests/nature3.jpg" class="nature3">
+        </div>
         <div> <img src="./assests/nature4.jpg" class="nature4"> </div>
     </div>
 </body>
