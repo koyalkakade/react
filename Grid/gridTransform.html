@@ -6,18 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid and Transform</title>
     <style>
-.nature1{
-    transform: rotate(20deg);
-}
+        .nature1 {
+            width: 418px;
+            clip-path: polygon(72% 0%, 0% -1%, -5% 88%);
+        }
+
+        .nature2 {
+            /* clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%); //parallogram*/
+            clip-path: polygon(807% 1480%, 48% 3%, -27% 100%);
+            margin-top: -177px;
+            width: 335px;
+        }
+
+        .div3 {
+            background-color: rgb(190, 187, 187);
+            width: 390px;
+            height: 230px;
+            margin-bottom: 65px;
+            /* margin-left: 335px;
+            margin-top: -199px; */
+            margin-left: 169px;
+            margin-top: -287px;
+            clip-path: polygon(40% -3%, 111% -32%, 26% 100%, 0% 50%);
+        }
+
+        .nature3 {
+            clip-path: polygon(58% 17%, 126% 78%, 15% 78%, 1% 64%);
+            margin-left: 276px;
+            margin-top: -402px;
+            width: 446px;
+            height: 508px;
+        }
+
+        .nature4 {
+            clip-path: polygon(95% 88%, 98% 2%, -223% -214%);
+            margin-left: 800px;
+            margin-top: -279px;
+        }
     </style>
 </head>
 
 <body>
     <div class="ImgDiv">
         <img src="./assests/nature1.jpg" class="nature1">
-        <img src="./assests/nature2.jpg" class="nature2">
+        <div class="div3"></div>
+        <div><img src="./assests/nature2.jpg" class="nature2"></div>
         <img src="./assests/nature3.jpg" class="nature3">
-        <img src="./assests/nature4.jpg" class="nature4">
+        <div> <img src="./assests/nature4.jpg" class="nature4"> </div>
     </div>
 </body>
 
