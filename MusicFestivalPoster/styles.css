@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(to right, rgb(32, 32, 40), rgb(53, 53, 83), rgb(53, 53, 83), rgb(53, 53, 83), rgb(32, 32, 40));
+    overflow-x: hidden;
+}
+
+header {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.clsSpan {
+    text-align: center;
+    font-weight: lighter;
+    padding: 5px;
+    margin: 5px;
+    transition: 0.4s ease;
+    /* width: 200px; */
+}
+
+.clsLineup {
+    justify-content: space-between;
+}
+
+.clsSpan:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 2px 15px red;
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    /* background: rgb(13, 8, 14); */
+    background-color: rgb(37 18 40);
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 20px;
+    align-items: center;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease; */
+}
+
+.btn {
+    width: 110px;
+    box-shadow: 0 0 1em 0.1em red;
+}
+
+.clsfood {
+    background-color: rgb(37 18 40);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
